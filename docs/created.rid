@@ -1,0 +1,24 @@
+Wed, 18 Dec 2019 02:22:23 +0000
+./Gemfile.lock	Sat, 14 Dec 2019 14:18:31 +0000
+./README.md	Thu, 12 Dec 2019 21:35:38 +0000
+./huella.gemspec	Sat, 14 Dec 2019 14:18:30 +0000
+./Guardfile	Thu, 12 Dec 2019 20:28:55 +0000
+./bin/setup	Thu, 12 Dec 2019 20:28:55 +0000
+./bin/console	Thu, 12 Dec 2019 20:28:55 +0000
+./Gemfile	Thu, 12 Dec 2019 20:28:55 +0000
+./lib/huella/plato_ambiental.rb	Wed, 18 Dec 2019 02:03:48 +0000
+./lib/huella/plato_nutricional.rb	Wed, 18 Dec 2019 02:02:30 +0000
+./lib/huella/version.rb	Sat, 14 Dec 2019 14:14:47 +0000
+./lib/huella/lista.rb	Sat, 14 Dec 2019 13:42:01 +0000
+./lib/huella/alimento.rb	Wed, 18 Dec 2019 01:43:58 +0000
+./lib/huella/nodo.rb	Sat, 14 Dec 2019 13:44:53 +0000
+./lib/huella.rb	Sat, 14 Dec 2019 14:15:19 +0000
+./spec/plato_nutricional_spec.rb	Wed, 18 Dec 2019 02:03:59 +0000
+./spec/huella_spec.rb	Thu, 12 Dec 2019 20:28:55 +0000
+./spec/spec_helper.rb	Thu, 12 Dec 2019 20:28:55 +0000
+./spec/lista_spec.rb	Thu, 12 Dec 2019 20:28:55 +0000
+./spec/alimento_spec.rb	Wed, 18 Dec 2019 01:42:03 +0000
+./spec/nodo_spec.rb	Thu, 12 Dec 2019 20:28:55 +0000
+./spec/plato_ambiental_spec.rb	Wed, 18 Dec 2019 02:03:51 +0000
+./spec/menu_dietetico_spec.rb	Wed, 18 Dec 2019 02:20:58 +0000
+./Rakefile	Thu, 12 Dec 2019 20:28:55 +0000

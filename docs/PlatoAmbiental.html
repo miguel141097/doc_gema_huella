@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>class PlatoAmbiental - RDoc Documentation</title>
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+  var index_rel_prefix = "./";
+</script>
+
+<script src="./js/jquery.js"></script>
+<script src="./js/darkfish.js"></script>
+
+<link href="./css/fonts.css" rel="stylesheet">
+<link href="./css/rdoc.css" rel="stylesheet">
+
+
+
+
+<body id="top" role="document" class="class">
+<nav role="navigation">
+  <div id="project-navigation">
+    <div id="home-section" role="region" title="Quick navigation" class="nav-section">
+  <h2>
+    <a href="./index.html" rel="home">Home</a>
+  </h2>
+
+  <div id="table-of-contents-navigation">
+    <a href="./table_of_contents.html#pages">Pages</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </div>
+</div>
+
+    <div id="search-section" role="search" class="project-section initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <div id="search-field-wrapper">
+      <input id="search-field" role="combobox" aria-label="Search"
+             aria-autocomplete="list" aria-controls="search-results"
+             type="text" name="search" placeholder="Search" spellcheck="false"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </div>
+
+    <ul id="search-results" aria-label="Search Results"
+        aria-busy="false" aria-expanded="false"
+        aria-atomic="false" class="initially-hidden"></ul>
+  </form>
+</div>
+
+  </div>
+
+  
+
+  <div id="class-metadata">
+    
+    <div id="parent-class-section" class="nav-section">
+  <h3>Parent</h3>
+
+  
+  <p class="link"><a href="PlatoNutricional.html">PlatoNutricional</a>
+  
+</div>
+
+    
+    
+    <!-- Method Quickref -->
+<div id="method-list-section" class="nav-section">
+  <h3>Methods</h3>
+
+  <ul class="link-list" role="directory">
+    
+    <li class="calls-super" ><a href="#method-c-new">::new</a>
+    
+    <li ><a href="#method-i-3C-3D-3E">#&lt;=&gt;</a>
+    
+    <li ><a href="#method-i-getEficienciaEnergeticaFormateada">#getEficienciaEnergeticaFormateada</a>
+    
+    <li ><a href="#method-i-getGeiAnualPlato">#getGeiAnualPlato</a>
+    
+    <li ><a href="#method-i-getGeiDiarioPlato">#getGeiDiarioPlato</a>
+    
+    <li ><a href="#method-i-getTerrenoPlato">#getTerrenoPlato</a>
+    
+    <li ><a href="#method-i-huellaNutricional">#huellaNutricional</a>
+    
+  </ul>
+</div>
+
+  </div>
+</nav>
+
+<main role="main" aria-labelledby="class-PlatoAmbiental">
+  <h1 id="class-PlatoAmbiental" class="class">
+    class PlatoAmbiental
+  </h1>
+
+  <section class="description">
+    
+<p>Es una clase hija de <a href="PlatoNutricional.html"><code>PlatoNutricional</code></a>, encapsula los métodos ambientales de un Plato. Al igual que en la clase padre, se define un nombre, lista de alimentos y lista de cantidades, que son inicializadas en el initialize de la clase padre con super</p>
+
+  </section>
+
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+
+    
+
+    
+     <section id="public-class-5Buntitled-5D-method-details" class="method-section">
+       <header>
+         <h3>Public Class Methods</h3>
+       </header>
+
+    
+      <div id="method-c-new" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">new</span><span
+            class="method-args">(nombre, listaAlimentos, listaCantidades)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+            <div class="method-calls-super">
+              Calls superclass method
+              <a href="PlatoNutricional.html#method-c-new"><code>PlatoNutricional::new</code></a>
+            </div>
+          
+
+          
+          <div class="method-source-code" id="new-source">
+            <pre><span class="ruby-comment"># File lib/huella/plato_ambiental.rb, line 8</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">initialize</span>(<span class="ruby-identifier">nombre</span>, <span class="ruby-identifier">listaAlimentos</span>, <span class="ruby-identifier">listaCantidades</span>)
+    <span class="ruby-keyword">super</span>(<span class="ruby-identifier">nombre</span>, <span class="ruby-identifier">listaAlimentos</span>, <span class="ruby-identifier">listaCantidades</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+    </section>
+  
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section">
+       <header>
+         <h3>Public Instance Methods</h3>
+       </header>
+
+    
+      <div id="method-i-3C-3D-3E" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">&lt;=&gt;</span><span
+            class="method-args">(other)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Compara dos Platos según la huella nutricional</p>
+          
+          
+
+          
+          <div class="method-source-code" id="3C-3D-3E-source">
+            <pre><span class="ruby-comment"># File lib/huella/plato_ambiental.rb, line 68</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">&lt;=&gt;</span>(<span class="ruby-identifier">other</span>)
+    <span class="ruby-comment">#-1 si left &lt;  right</span>
+    <span class="ruby-comment"># 0 si left == right</span>
+    <span class="ruby-comment"># 1 si left &gt;  right</span>
+    <span class="ruby-keyword">self</span>.<span class="ruby-identifier">huellaNutricional</span> <span class="ruby-operator">&lt;=&gt;</span> <span class="ruby-identifier">other</span>.<span class="ruby-identifier">huellaNutricional</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-getEficienciaEnergeticaFormateada" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">getEficienciaEnergeticaFormateada</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Se calcula la relación GEI/valorEnegertico y la retorna formateada</p>
+          
+          
+
+          
+          <div class="method-source-code" id="getEficienciaEnergeticaFormateada-source">
+            <pre><span class="ruby-comment"># File lib/huella/plato_ambiental.rb, line 47</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">getEficienciaEnergeticaFormateada</span>
+
+    <span class="ruby-identifier">salida</span> = []
+    <span class="ruby-identifier">eficienciaTotal</span> = <span class="ruby-value">0</span>
+
+    <span class="ruby-ivar">@listaAlimentos</span>.<span class="ruby-identifier">each_with_index</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">elemento</span>, <span class="ruby-identifier">index</span><span class="ruby-operator">|</span>
+        <span class="ruby-identifier">energia</span> = <span class="ruby-ivar">@listaCantidades</span>.<span class="ruby-identifier">at</span>(<span class="ruby-identifier">index</span>) <span class="ruby-operator">*</span> <span class="ruby-identifier">elemento</span>.<span class="ruby-identifier">getValorEnergetico</span>
+        <span class="ruby-identifier">gei</span> = <span class="ruby-ivar">@listaCantidades</span>.<span class="ruby-identifier">at</span>(<span class="ruby-identifier">index</span>) <span class="ruby-operator">*</span> <span class="ruby-identifier">elemento</span>.<span class="ruby-identifier">gei</span>
+        
+        <span class="ruby-comment">#GEI pruducidos por 1 kcal de un alimento</span>
+        <span class="ruby-identifier">eficiencia</span> = (<span class="ruby-identifier">gei</span><span class="ruby-operator">/</span><span class="ruby-identifier">energia</span>).<span class="ruby-identifier">round</span>(<span class="ruby-value">2</span>)
+        <span class="ruby-identifier">eficienciaTotal</span> <span class="ruby-operator">+=</span> <span class="ruby-identifier">eficiencia</span>
+
+        <span class="ruby-identifier">salida</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">eficiencia</span>
+    <span class="ruby-keyword">end</span>
+
+    <span class="ruby-string">&quot;[&quot;</span> <span class="ruby-operator">+</span> <span class="ruby-ivar">@nombre</span> <span class="ruby-operator">+</span> <span class="ruby-string">&quot; &quot;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">eficienciaTotal</span>.<span class="ruby-identifier">round</span>(<span class="ruby-value">2</span>).<span class="ruby-identifier">to_s</span> <span class="ruby-operator">+</span> <span class="ruby-string">&quot; [&quot;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">salida</span>.<span class="ruby-identifier">join</span>(<span class="ruby-string">&quot; &quot;</span>) <span class="ruby-operator">+</span> <span class="ruby-string">&quot;]]&quot;</span>
+
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-getGeiAnualPlato" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">getGeiAnualPlato</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Retorna los gases de efecto invernadero producidos en un año por un plato</p>
+          
+          
+
+          
+          <div class="method-source-code" id="getGeiAnualPlato-source">
+            <pre><span class="ruby-comment"># File lib/huella/plato_ambiental.rb, line 29</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">getGeiAnualPlato</span>
+    (<span class="ruby-keyword">self</span>.<span class="ruby-identifier">getGeiDiarioPlato</span> <span class="ruby-operator">*</span> <span class="ruby-value">365</span>).<span class="ruby-identifier">round</span>(<span class="ruby-value">2</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-getGeiDiarioPlato" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">getGeiDiarioPlato</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Retorna los gases de efecto invernadero producidos en un día por un plato</p>
+          
+          
+
+          
+          <div class="method-source-code" id="getGeiDiarioPlato-source">
+            <pre><span class="ruby-comment"># File lib/huella/plato_ambiental.rb, line 13</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">getGeiDiarioPlato</span>
+
+    <span class="ruby-identifier">geiTotal</span> = <span class="ruby-value">0</span>
+
+    <span class="ruby-identifier">alimentoWithCantidad</span> = <span class="ruby-ivar">@listaAlimentos</span>.<span class="ruby-identifier">zip</span>(<span class="ruby-ivar">@listaCantidades</span>)
+    
+    <span class="ruby-identifier">alimentosMultiplicados</span> = <span class="ruby-identifier">alimentoWithCantidad</span>.<span class="ruby-identifier">map</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">alimento</span>, <span class="ruby-identifier">cantidad</span><span class="ruby-operator">|</span>
+        <span class="ruby-identifier">alimento</span> <span class="ruby-operator">*</span> <span class="ruby-identifier">cantidad</span>
+    <span class="ruby-keyword">end</span>
+
+    <span class="ruby-identifier">geiTotal</span> = <span class="ruby-identifier">alimentosMultiplicados</span>.<span class="ruby-identifier">reduce</span>(<span class="ruby-value">:+</span>).<span class="ruby-identifier">gei</span>
+    <span class="ruby-identifier">geiTotal</span>.<span class="ruby-identifier">round</span>(<span class="ruby-value">2</span>)
+
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-getTerrenoPlato" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">getTerrenoPlato</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Retorna el uso de terreno producido en un año por un plato</p>
+          
+          
+
+          
+          <div class="method-source-code" id="getTerrenoPlato-source">
+            <pre><span class="ruby-comment"># File lib/huella/plato_ambiental.rb, line 34</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">getTerrenoPlato</span>
+
+    <span class="ruby-identifier">terrenoTotal</span> = <span class="ruby-value">0</span>
+
+    <span class="ruby-ivar">@listaAlimentos</span>.<span class="ruby-identifier">each_with_index</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">alimento</span>, <span class="ruby-identifier">index</span><span class="ruby-operator">|</span>
+        <span class="ruby-identifier">terrenoTotal</span> <span class="ruby-operator">+=</span> <span class="ruby-identifier">alimento</span>.<span class="ruby-identifier">terreno</span> <span class="ruby-operator">*</span> <span class="ruby-ivar">@listaCantidades</span>.<span class="ruby-identifier">at</span>(<span class="ruby-identifier">index</span>)
+    <span class="ruby-keyword">end</span>
+
+    <span class="ruby-identifier">terrenoTotal</span>.<span class="ruby-identifier">round</span>(<span class="ruby-value">2</span>)
+
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-huellaNutricional" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">huellaNutricional</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Retorna un número en el rango [1,3] que corresponde a la huella nutricional de un plato</p>
+          
+          
+
+          
+          <div class="method-source-code" id="huellaNutricional-source">
+            <pre><span class="ruby-comment"># File lib/huella/plato_ambiental.rb, line 77</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">huellaNutricional</span>
+
+    <span class="ruby-identifier">alimentoWithCantidad</span> = <span class="ruby-ivar">@listaAlimentos</span>.<span class="ruby-identifier">zip</span>(<span class="ruby-ivar">@listaCantidades</span>)
+
+    <span class="ruby-comment">#Energia</span>
+    <span class="ruby-identifier">energia</span> = <span class="ruby-identifier">alimentoWithCantidad</span>.<span class="ruby-identifier">map</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">alimento</span>, <span class="ruby-identifier">cantidad</span><span class="ruby-operator">|</span> 
+        <span class="ruby-identifier">alimento</span>.<span class="ruby-identifier">getIndiceEnergia</span>(<span class="ruby-identifier">cantidad</span>)
+    <span class="ruby-keyword">end</span>
+
+    <span class="ruby-comment">#Huella Carbono</span>
+    <span class="ruby-identifier">carbono</span> = <span class="ruby-identifier">alimentoWithCantidad</span>.<span class="ruby-identifier">map</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">alimento</span>, <span class="ruby-identifier">cantidad</span><span class="ruby-operator">|</span> 
+        <span class="ruby-identifier">alimento</span>.<span class="ruby-identifier">getIndiceHuellaCarbono</span>(<span class="ruby-identifier">cantidad</span>)
+    <span class="ruby-keyword">end</span>
+
+    <span class="ruby-comment">#Sumatorio</span>
+    <span class="ruby-identifier">dividendo</span> = <span class="ruby-identifier">energia</span>.<span class="ruby-identifier">reduce</span>(<span class="ruby-value">:+</span>) <span class="ruby-operator">+</span> <span class="ruby-identifier">carbono</span>.<span class="ruby-identifier">reduce</span>(<span class="ruby-value">:+</span>)
+    <span class="ruby-identifier">divisor</span> = <span class="ruby-identifier">energia</span>.<span class="ruby-identifier">size</span> <span class="ruby-operator">*</span> <span class="ruby-value">2.0</span>
+    <span class="ruby-comment">#Nota: Se divide entre la cantidad de indices</span>
+
+    (<span class="ruby-identifier">dividendo</span> <span class="ruby-operator">/</span> <span class="ruby-identifier">divisor</span>).<span class="ruby-identifier">round</span>(<span class="ruby-value">2</span>)
+
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+    </section>
+  
+  </section>
+
+</main>
+
+
+<footer id="validator-badges" role="contentinfo">
+  <p><a href="https://validator.w3.org/check/referer">Validate</a>
+  <p>Generated by <a href="https://ruby.github.io/rdoc/">RDoc</a> 6.1.0.
+  <p>Based on <a href="http://deveiate.org/projects/Darkfish-RDoc/">Darkfish</a> by <a href="http://deveiate.org">Michael Granger</a>.
+</footer>
+
